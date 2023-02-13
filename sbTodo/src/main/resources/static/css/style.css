@@ -1,0 +1,12 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+header {
+	height: 50px;
+	width: 100%;
+	background:blue;
+	color: white;
+	padding : 20px 0 20px 30px;
+}
