@@ -10,4 +10,9 @@ public class TodoController {
 	public String list() {
 		return "todos/list";
 	}
+
+	@RequestMapping("/create")
+	public String create() {
+		return "todos/create";
+	}
 }
