@@ -1,0 +1,5 @@
+create table todos (
+id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+task VARCHAR(256) NOT NULl,
+detail VARCHAR(256) NOT NULl
+);

@@ -16,5 +16,5 @@ public class TodoRepository {
 	void insert(String task, String detail);
 
 	@Select("SELECT * FROM TODOS WHERE ID = #{todoId}")
-	TodoEntity selectById();
+	TodoEntity selectById(long id);
 }
