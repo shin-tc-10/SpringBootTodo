@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 @Mapper
-public class TodoRepository {
+public interface TodoRepository {
 
 	@Select("SELECT * FROM TODOS")
 	List<TodoEntity> selectAll();
