@@ -11,18 +11,20 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class TodoService {
-	  private final TodoRepository todoRepository;
-	    public List<TodoEntity> selectAll() {
-	        return todoRepository.selectAll();
-	    }
 
-	    @Transactional
-	    public void create(String task, String detail) {
-	        todoRepository.insert(task, detail);
+	private final TodoRepository todoRepository;
 
-	    }
+	public List<TodoEntity> selectAll() {
+	    return todoRepository.selectAll();
+	}
 
-	    public TodoEntity selectById(long id) {
-	    return todoRepository.selectById(id);
-	    }
+	@Transactional
+	public void create(String task, String detail) {
+	    todoRepository.insert(task, detail);
+
+	}
+
+	public TodoEntity selectById(long id) {
+	return todoRepository.selectById(id);
+	}
 }

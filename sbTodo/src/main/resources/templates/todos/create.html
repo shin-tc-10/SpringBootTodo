@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 <h1>Todoを作成する</h1>
-<form >
+<form th:action="@{/createForm}" th:object="${todoForm}" method="post">
 	<div>
 		<label>件名</label>
-		<input type="text" />
+		<input type="text" th:field="*{task}"/>
 	</div>
 	<div>
 		<label>詳細</label>
-		<textarea></textarea>
+		<textarea th:field="*{detail}"></textarea>
 	</div>
 	<button>送信</button>
 	<button>キャンセル</button>
