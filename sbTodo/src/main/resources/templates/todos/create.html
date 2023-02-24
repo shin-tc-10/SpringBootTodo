@@ -7,11 +7,11 @@
 <body>
 <h1>Todoを作成する</h1>
 <form th:action="@{/createForm}" th:object="${todoForm}" method="post">
-	<div>
+	<div class="todoForm">
 		<label>件名</label>
 		<input type="text" th:field="*{task}"/>
 	</div>
-	<div>
+	<div class="todoForm">
 		<label>詳細</label>
 		<textarea th:field="*{detail}"></textarea>
 	</div>
