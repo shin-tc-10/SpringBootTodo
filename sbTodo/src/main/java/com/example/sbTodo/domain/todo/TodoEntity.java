@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class TodoEntity {
 
-	private int id;
+	private long id;
 	private String task;
 	private String detail;
 }

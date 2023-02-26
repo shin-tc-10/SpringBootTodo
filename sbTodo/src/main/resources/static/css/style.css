@@ -4,15 +4,15 @@
 }
 
 header {
-	height: 300px;
+	height: 600px;
 	width: 100vw;
 	text-align:center;
-	line-height:400px;
+	line-height:700px;
 	font-size:25px;
 }
 
 .main {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -24,13 +24,14 @@ header {
 	height: 100%;
 	text-align:center;
 	font-size:30px;
-	/* line-height:700px; */
+	display: flex;
+    justify-content: center; /*左右中央揃え*/
+	align-items: center;     /*上下中央揃え*/
 }
 
 /* トップページボタン */
 a.todoListLink {
 	display: block;
-	height:100px;
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;

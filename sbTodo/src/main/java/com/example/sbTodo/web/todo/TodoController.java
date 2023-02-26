@@ -18,7 +18,9 @@ public class TodoController {
 	TodoForm todoForm;
 
 	@RequestMapping("/list")
-	public String list() {
+	public String list(Model model, TodoForm todoForm) {
+		todoService.selectAll();
+		model.addAttribute("todoForm", todoForm);
 		return "todos/list";
 	}
 
@@ -33,6 +35,6 @@ public class TodoController {
 	public String createForm(@ModelAttribute TodoForm model) {
 
 		todoService.create(model.getTask(), model.getDetail());
-		return "todos/create";
+		return "todos/list";
 	}
 }
