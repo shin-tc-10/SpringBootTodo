@@ -5,9 +5,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div>
 <h1>Todoリスト</h1>
-<a th:href="@{/create}">Todoを作成する</a>
-<a th:href="@{/}">トップページに戻る</a>
+</div>
+<div>
+	<a th:href="@{/create}">Todoを作成する</a>
+</div>
+<div>
+	<a th:href="@{/}">トップページに戻る</a>
+</div>
 <div th:each="todo : ${todoForm}">
 	<p th:text="${todo.id}"></p>
 	<p th:text="${todo.detail}"></p>
